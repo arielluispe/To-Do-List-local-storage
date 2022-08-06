@@ -1,0 +1,145 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+h2{
+    text-align: center;
+}
+h4{
+    text-align: center;
+}
+
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #9B6A09;
+    height: 35%;
+    width: 700px;
+    position: absolute;
+    margin: auto;
+    top: 50px;
+    left: 0;
+    right: 0;
+    padding: 30px 0;
+    border-radius: 8px;
+}
+
+.section-todo-list{
+    position: relative;
+    padding: 30px 15px;
+    background-color: #fff;
+     border-radius: 5px;
+     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.section-todo-list h2{
+    font-size: 42px;
+    margin: 20px;
+}
+
+.input-btn{
+    display: flex;
+    margin-bottom: 10%;
+}
+.input-btn input{
+    border-radius: 5px;
+    width: 70%;
+    height: 45px;
+    font-size: 15px;
+    border: 2px solid #d1d1d1;
+    padding: 12px;
+    color: #111111;
+    font-weight: 500;
+    position: relative;
+}
+.input-btn button{
+    width: 20%;
+    height: 40px;
+    border-radius: none;
+    border-color: #056212;
+    background-color: #04560F;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-left: 30px;
+}
+.input-btn button:hover{
+    background-color: #08A21D;
+    color: #fff;
+    transition: all 0.5s 0s ease;
+}
+.input-btn button:not(:hover){
+    transition: all 0.5s 0s ease;
+}
+.list-tasks{
+    margin-bottom: 11%;
+}
+.list-tasks ul{
+    padding-left: 0;
+    margin: 0 13px;
+}
+.list-tasks li{
+    font-size: 21px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+.list-tasks li:first-letter{
+    color: #32e7ff;
+    text-transform: uppercase;
+}
+.list-tasks li span{
+    background-color: #7E0905;
+    border-radius: 50%;
+    padding: 1px 8px; 
+    color: #fff;
+    cursor: pointer;
+    height: 26px;
+}
+.list-tasks li span:hover{
+    background-color: red;
+}
+
+
+
+/*remove all btn*/
+.remove-all{
+    border-radius: none;
+    border-color: #360D04;
+    background-color: #280A03;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 9px 16px;
+    
+}
+.remove-all:hover{
+    background-color: #972108;
+    color: #fff;
+    transition: all 0.5s 0s ease;
+}
+.remove-all:not(:hover){
+
+    transition: all 0.5s 0s ease;
+}
+
+/*responsive*/
+@media only screen and (max-width: 768px){
+    .section-todo-list{
+        width: 90%;
+    }
+}
+
+/* validation message */
+.error {
+    color: red;
+    text-align: left;
+    background-color: #ffe5e5;
+    padding: 2px 13px;
+    border: solid 2px red;
+    border-radius: 2px;
+}
